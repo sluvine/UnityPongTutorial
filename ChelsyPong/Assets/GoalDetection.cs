@@ -9,6 +9,7 @@ public class GoalDetection : MonoBehaviour {
 		if (hitInfo.name == "chelsyball")
         {
             GameManager.Score(transform.name);
+            hitInfo.gameObject.SendMessage("ResetBall");
         }
 	}
 }

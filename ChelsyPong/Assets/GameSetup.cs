@@ -23,12 +23,13 @@ public class GameSetup : MonoBehaviour {
         wallBottom.offset = new Vector2(0f, mainCam.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).y - 0.5f);
 
         wallLeft.size = new Vector2(1f, mainCam.ScreenToWorldPoint(new Vector3(0f, Screen.height * 2f, 0f)).y);
-        wallLeft.offset = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).x - 0.5f, 0f);
+        wallLeft.offset = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(0f, 0f, 0f)).x - 1f, 0f);
 
         wallRight.size = new Vector2(1f, mainCam.ScreenToWorldPoint(new Vector3(0f, Screen.height * 2f, 0f)).y);
-        wallRight.offset = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(Screen.width, 0f, 0f)).x + 0.5f, 0f);
+        wallRight.offset = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(Screen.width, 0f, 0f)).x + 1f, 0f);
 
         Player01.position = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(5f, 0f, 0f)).x, 0f);
         Player02.position = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(Screen.width - 5f, 0f, 0f)).x, 0f);
+        
     }
 }
